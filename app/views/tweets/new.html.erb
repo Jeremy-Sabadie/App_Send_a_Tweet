@@ -1,0 +1,13 @@
+<div class="w3-card-4">
+
+<div class="w3-container w3-blue">
+  <h1>Send tweet</h1>
+</div>
+ <%= form_for(@tweet, method: :post, :class => "w3-container") do |f| %>
+
+      <%= f.label :content %>
+      <%= f.text_field :content, :class => "w3-input w3-borderw" %>
+
+      <%= f.submit "Send tweet", :class =>"w3-btn w3-blue"%>
+<% end %>
+</div>

@@ -1,0 +1,8 @@
+<h1>Index des tweets</h1>
+
+<% @tweets.each do |tweet| %>
+<div class = "w3-card w3-padding-16 w3-padding-large w3-margin-top">
+<p> Tweet n°<%= tweet.id %> :</p>
+<p><%= tweet.content %></p>
+</div>
+<%end%>
